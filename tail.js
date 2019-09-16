@@ -18,8 +18,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lol","Lol");
-assertEqual(5,4);
-assertEqual(3,3);
-assertEqual("lmao","LMAO");
-assertEqual([5,4,3],[5,4,3]);
+const tail = function(inputArray) {
+  return inputArray.slice(1);
+};
+
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result, ["Lighthouse", "Labs"]);
