@@ -6,7 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lol","Lol");
-assertEqual(5,4);
-assertEqual(3,3);
-assertEqual("lmao","LMAO");
+const head = function(inputArray) {
+  return inputArray[0];
+};
+
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
