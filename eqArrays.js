@@ -8,10 +8,8 @@ const eqArrays = function(actual, expected) {
       }
     }
     if (isComparable) {
-      console.log(`Assert succeeded: ${actual} = ${expected}`);
       return true;
     } else {
-      console.log(`Assert failed: ${actual} != ${expected}`);
       return false;
     }
   }
