@@ -32,11 +32,11 @@ const eqArrays = function(actual, expected) {
   }
 };
 
-const flatten = function(toFlatten){
+const flatten = function(toFlatten) {
   let returnArray = [];
-  for(let item of toFlatten){
-    if( Array.isArray(item)){
-      for(let j = 0; j < item.length; j++){
+  for (let item of toFlatten) {
+    if (Array.isArray(item)) {
+      for (let j = 0; j < item.length; j++) {
         returnArray.push(item[j]);
       }
     } else {
@@ -44,6 +44,6 @@ const flatten = function(toFlatten){
     }
   }
   return returnArray;
-}
+};
 
 console.log(flatten([1,2,3,[4,5],6,[7,8],[9,10]]));

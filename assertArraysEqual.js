@@ -14,6 +14,6 @@ const assertArraysEqual = function(actual, expected) {
       
     }
   }
-}
+};
 
 assertArraysEqual([1,2],[1,2]);

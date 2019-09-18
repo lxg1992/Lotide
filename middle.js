@@ -14,7 +14,7 @@ const assertArraysEqual = function(actual, expected) {
       
     }
   }
-}
+};
 
 const eqArrays = function(actual, expected) {
   if (Array.isArray(actual) && Array.isArray(expected) && actual.length === expected.length) {
@@ -30,21 +30,21 @@ const eqArrays = function(actual, expected) {
       return false;
     }
   }
-}
+};
 
-const middle = function(arrayInput){
+const middle = function(arrayInput) {
   let num = 0;
-  if(arrayInput.length <= 2){
+  if (arrayInput.length <= 2) {
     return [];
   } else {
     num = Math.floor(arrayInput.length / 2);
-    if(arrayInput.length % 2 === 0){
-      return [arrayInput[num-1],arrayInput[num]];
+    if (arrayInput.length % 2 === 0) {
+      return [arrayInput[num - 1],arrayInput[num]];
     } else {
-      return [arrayInput[num]]; 
+      return [arrayInput[num]];
     }
   }
-}
+};
 
 console.log(middle([1]));
 console.log(middle([1,2]));

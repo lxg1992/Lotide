@@ -13,7 +13,7 @@ const eqArrays = function(actual, expected) {
       return false;
     }
   }
-}
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {

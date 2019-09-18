@@ -6,12 +6,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-let countLetters = function(str){
+let countLetters = function(str) {
   let result = {};
   str = str.replace(/ /g, '');
-  for(const letter of str){
+  for (const letter of str) {
     console.log(letter);
-    if(result[letter]){
+    if (result[letter]) {
       result[letter] += 1;
     } else {
       result[letter] = 1;
@@ -19,6 +19,6 @@ let countLetters = function(str){
   }
   console.log(str);
   console.log(result);
-}
+};
 
 countLetters("lmao ok");

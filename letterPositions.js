@@ -14,14 +14,14 @@ const assertArraysEqual = function(actual, expected) {
       
     }
   }
-}
+};
 
 const letterPositions = function(sentence) {
   const results = {};
-  for(let i = 0; i < sentence.length; i++){
+  for (let i = 0; i < sentence.length; i++) {
     console.log(i, sentence[i]);
-    if(sentence[i].match(/\w/)){
-      if(results[sentence[i]]){
+    if (sentence[i].match(/\w/)) {
+      if (results[sentence[i]]) {
         results[sentence[i]].push(i);
       } else {
         results[sentence[i]] = [];
