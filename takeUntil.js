@@ -1,13 +1,13 @@
 const takeUntil = function(array, callback) {
   let arr = [];
-  for(const item of array) {
-    if(callback(item)){
+  for (const item of array) {
+    if (callback(item)) {
       return arr;
     }
     arr.push(item);
   }
   return arr;
-}
+};
 
 
 
@@ -29,4 +29,4 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual([1,2,0,-1], takeUntil([1,2,0,-1,3,4], (x) => x > 2))
+assertArraysEqual([1,2,0,-1], takeUntil([1,2,0,-1,3,4], (x) => x > 2));

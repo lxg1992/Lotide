@@ -90,38 +90,38 @@ const assertObjectsEqual = function(obj1, obj2) {
 obj1 = {
   a: "1",
   b: "2"
-}
+};
 
 obj2 = {
   b: "2",
   a: "1"
-}
+};
 
 obj3 = {
   a: "1",
   b: "2",
   c: "3"
-}
+};
 
 obj4 = {
   a: [1,2,3],
   b: "4"
-}
+};
 
 obj5 = {
   a: [1,2,3],
   b: "5"
-}
+};
 
 obj6 = {
   b: "5",
   a: [1,2,3]
-}
+};
 
 obj7 = {
   b: "5",
   a: [1,2,3,4]
-}
+};
 
 assertObjectsEqual(obj1,obj2);
 assertObjectsEqual(obj1,obj3);

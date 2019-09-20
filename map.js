@@ -4,7 +4,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 const words = ["ground", "control", "to", "major", "tom"];
 
@@ -28,7 +28,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const testCase = map(words, word => word[0])
+const testCase = map(words, word => word[0]);
 
 assertArraysEqual(testCase,['g','c','t','m','t']);
 
